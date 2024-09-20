@@ -1,0 +1,10 @@
+.om-code-block {
+    position: relative;
+}
+
+.om-copy-btn {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px; 
+    border: none;
+}
