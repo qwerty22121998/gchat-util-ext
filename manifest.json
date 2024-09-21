@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Google Chat utility",
-    "description": "Google Chat utility, include copy code block",
+    "name": "GChat utility",
+    "description": "GChat utility, include copy code block",
     "version": "1.0",
     "content_scripts": [
         {
