@@ -1,10 +1,26 @@
 .om-code-block {
-    position: relative;
+  position: relative;
 }
 
 .om-copy-btn {
-    background-color: white;
-    padding: 5px;
-    border-radius: 10px; 
-    border: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.1s;
+}
+
+[data-theme=dark] .om-copy-btn {
+    background-color: #131314;
+    color: white;
+}
+
+.om-copy-btn:hover {
+  transform: scale(1.1);
+}
+
+.om-copy-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
