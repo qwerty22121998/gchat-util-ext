@@ -28,9 +28,6 @@
             "run_at": "document_end"
         }
     ],
-    "permissions": [
-        "tabs"
-    ],
     "background": {
         "service_worker": "scripts/service_worker.js"
     },
