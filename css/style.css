@@ -1,11 +1,19 @@
 .om-code-block {
   position: relative;
+  margin-bottom: 0px !important;
 }
 
 .om-copy-btn {
+  /* right: 0; */
+  /* bottom: 0; */
+  /* position: absolute; */
+  font-weight: 500;
   background-color: white;
   padding: 5px;
-  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   border: none;
   transition: all 0.1s;
 }
@@ -16,7 +24,11 @@
 }
 
 .om-copy-btn:hover {
-  transform: scale(1.1);
+  transform: translateY(-2px);
+}
+
+.om-copy-btn:active {
+  transform: translateY(0);
 }
 
 .om-copy-btn-container {
