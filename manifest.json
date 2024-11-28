@@ -20,7 +20,8 @@
             ],
             "all_frames": true,
             "js": [
-                "scripts/frame.js"
+                "scripts/chat.js",
+                "scripts/txt_file.js"
             ],
             "css": [
                 "css/style.css"

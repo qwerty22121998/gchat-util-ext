@@ -6,7 +6,7 @@ const elemFromString = (str) => {
   return template.content.firstChild;
 };
 
-const createCopyBtn = (content) => {
+const createChatCopyBtn = (content) => {
   const container = document.createElement("div");
   container.classList.add("om-copy-btn-container");
   const btn = document.createElement("button");
@@ -27,18 +27,18 @@ const createCopyBtn = (content) => {
   return container;
 };
 
-const fetchCodeBlock = () => {
-  const blocks = document.querySelectorAll(CodeBlockQuery);
-  Array.from(blocks).forEach((block) => {
-    block.classList.add("om-code-block");
+const fetchChat = () => {
+  const chats = document.querySelectorAll(CodeBlockQuery);
+  Array.from(chats).forEach((chat) => {
+    chat.classList.add("om-code-block");
     // console.log(block.innerText);
-    block.parentNode.insertBefore(
-      createCopyBtn(block.innerText),
-      block.nextSibling
+    chat.parentNode.insertBefore(
+      createChatCopyBtn(chat.innerText),
+      chat.nextSibling
     );
   });
 };
 
 setInterval(() => {
-  fetchCodeBlock();
+  fetchChat();
 }, 500);
