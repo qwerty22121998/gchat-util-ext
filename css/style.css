@@ -3,36 +3,46 @@
   margin-bottom: 0px !important;
 }
 
-.om-copy-btn {
-  /* right: 0; */
-  /* bottom: 0; */
-  /* position: absolute; */
-  font-weight: 500;
-  background-color: white;
-  padding: 5px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: none;
-  transition: all 0.1s;
+.om-code-block:hover .om-copy-btn {
+  display: inline-flex;
 }
 
-[data-theme=dark] .om-copy-btn {
-    background-color: #131314;
-    color: white;
+.om-copy-btn {
+  right: 2px;
+  top: 2px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  transition: all 0.1s;
+  border: 1px grey solid;
+  margin: 3px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .om-copy-btn {
+  background-color: #131314;
+  color: white;
+}
+
+[data-theme="dark"] .om-copy-btn:hover {
+  background-color: #1f1f1f;
 }
 
 .om-copy-btn:hover {
-  transform: translateY(-2px);
+  background-color: rgb(225, 225, 225);
 }
 
 .om-copy-btn:active {
-  transform: translateY(0);
+  transform: scale(1.1);
 }
 
 .om-copy-btn-container {
   width: 100%;
-  display: flex;
-  justify-content: end;
+  left: 0;
+  position: sticky;
 }
