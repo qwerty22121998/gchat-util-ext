@@ -1,6 +1,7 @@
 .om-code-block {
   position: relative;
   margin-bottom: 0px !important;
+  min-height: 40px;
 }
 
 .om-code-block:hover .om-copy-btn {
