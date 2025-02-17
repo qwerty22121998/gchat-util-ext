@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "GChat utility",
     "description": "GChat utility, include copy code block",
-    "version": "1.6",
+    "version": "1.6.1",
     "content_scripts": [
         {
             "matches": [
